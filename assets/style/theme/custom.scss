@@ -1,0 +1,84 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+
+  .main-panel {
+    background: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+
+    .btn-group {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+
+  .form-textarea {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .form-textarea_count {
+      position: absolute;
+      right: 13px;
+      bottom: 13px;
+      line-height: 1em;
+      color: #666;
+    }
+  }
+}
+
+.fz12 {
+  font-size: 12px !important;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+
+  &.dot0 {
+    background: $primary-color;
+  }
+
+  &.dot1 {
+    background: #39b0db;
+  }
+
+  &.dot2 {
+    background: #26c24d;
+  }
+
+  &.dot3 {
+    background: #f90;
+  }
+
+  &.dot4 {
+    background: #f73a09;
+  }
+
+  &.dot5 {
+    background: #ccc;
+  }
+}
+
+.gray_txt {
+  color: #777;
+  font-size: 12px;
+}
+
+.ql-editor {
+  white-space: initial !important;
+}
+
+h1 {
+  font-size: 2em;
+}

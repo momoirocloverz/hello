@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC",
+    "WenQuanYi Micro Hei", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#app {
+  color: #2c3e50;
+  height: 100%;
+  background: #f2f9ff;
+}
+
+.d2-crud-pagination {
+  text-align: right;
+}
+
+.el-pagination__total {
+  margin-left: 15px;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid #eee;
+}
+
+.el-dialog__title {
+  font-size: 16px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.common_table-th-bg {
+  background: $table-head !important;
+  color: #333;
+}
+
+.common_tip {
+  color: $tip-color;
+  font-size: 12px;
+  &.inline-tip {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cursor {
+  cursor: pointer;
+}
+.common_flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common_flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.common_flex-space-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.common_flex-column {
+  display: flex;
+  flex-direction: column;
+}
+//活动
+.common_active-content {
+  .el-input,
+  .el-textarea,
+  .el-date-editor,
+  .el-date-editor--datetimerange.el-input__inner,
+  .el-select {
+    .el-input {
+      width: 100%;
+    }
+    width: 60%;
+    max-width: 600px;
+  }
+}
+.common_activity-step {
+  .el-step {
+    .el-step__head {
+      .el-step__icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: rgba(187, 219, 246, 0.21);
+      }
+
+      .el-step__icon-inner {
+        position: absolute;
+        z-index: 1;
+        font-size: 30px;
+        color: rgba(138, 150, 160, 1);
+      }
+
+      .el-step__line {
+        top: 50%;
+        left: 55%;
+        right: -40%;
+        background: rgba(216, 216, 216, 1);
+      }
+
+      &.is-finish {
+        .el-step__icon-inner {
+          color: #fff;
+        }
+
+        .el-step__icon {
+          &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border-radius: 50%;
+            background: rgba(18, 125, 215, 1);
+            z-index: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.common_activity-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.common_active-set-form {
+  .form-upload {
+    width: 60%;
+    height: 260px;
+    max-width: 600px;
+    .upload-area {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .upload-item,
+    .is-preview,
+    .upload-area {
+      width: 100% !important;
+      height: 100% !important;
+      .upload-box {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+.common_limit-ipt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
+  .ipt-num {
+    margin-bottom: 0 !important;
+  }
+}
+.common_active-detail {
+  .active-img {
+    width: 355px;
+    height: 193px;
+  }
+  .share-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.common_detail-status-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: $primary-color;
+  &.text-1 {
+    color: #39b0db;
+  }
+  &.text-2 {
+    color: #0eec2c;
+  }
+  &.text-3 {
+    color: #f90;
+  }
+  &.text-4 {
+    color: #f73a09;
+  }
+  &.text-5 {
+    color: #ccc;
+  }
+}
+
+.primary-text {
+  color: $primary-color;
+}
+.warn-text {
+  color: #f90;
+}
+@import "./_element-variables";
+@import "./_normalize";
+@import "./theme/index";

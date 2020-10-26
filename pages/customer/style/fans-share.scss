@@ -1,0 +1,46 @@
+.fans {
+  display: flex;
+  height: 100%;
+
+  .left {
+    width: 250px;
+    height: 100%;
+  }
+
+  .right {
+    width: calc(100% - 250px);
+    padding-left: 20px;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+
+  .txt {
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-right: 10px;
+  }
+}
+
+.line {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #EBEEF5;
+}
+
+.txt-time {
+  font-size: 13px;
+  color: #8d8d8d;
+  margin-right: 10px;
+}
+
+
+.bold {
+  font-weight: bold;
+}

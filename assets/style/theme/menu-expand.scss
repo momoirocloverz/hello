@@ -1,0 +1,170 @@
+//全局搜索这个类,删除就好
+.expand_double_por {
+  position: relative;
+}
+
+//全局搜索这个类,删除就好
+.expand_double {
+  &.el-menu {
+    position: initial;
+  }
+
+  &>.el-menu-item {
+    padding-right: 5px;
+
+    &>.line-right {
+      position: relative;
+      top: 10px;
+    }
+
+    &.is-active {
+
+      .iconfont,
+      span {
+        color: #e17171;
+      }
+
+      &>.line-right {
+        border-right: 2px solid #e17171;
+      }
+    }
+  }
+
+  &>.kkk {
+
+    &>.el-submenu,
+    &>.el-menu-item {
+      height: 40px;
+      background: #222;
+      display: flex;
+      align-items: center;
+      padding-right: 5px;
+
+      .line-right,
+      &>.el-submenu__title {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &>.el-submenu.is-active {
+      .iconfont {
+        color: #e17171;
+      }
+
+      &>.el-submenu__title {
+        &>span {
+          color: #e17171;
+        }
+
+        border-right: 2px solid #e17171;
+      }
+    }
+
+    .el-menu-item.is-active {
+      color: #e17171;
+
+      .iconfont {
+        color: #e17171;
+      }
+
+      .line-right {
+        border-right: 2px solid #e17171;
+      }
+    }
+
+    &>.el-submenu>.el-submenu__title {
+      .el-icon-arrow-down:before {
+        display: none;
+        content: "\e6e0";
+      }
+
+      .el-icon-arrow-up:before {
+        display: none;
+        content: "\e6de";
+      }
+    }
+
+    &>.el-submenu>.el-menu {
+      box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.1);
+      position: absolute;
+      left: 120px;
+      width: 130px;
+      top: 0;
+      // top: 20px;
+      z-index: 5;
+      height: 100%;
+      overflow: auto;
+
+      .el-menu-item,
+      .el-submenu__title {
+        background: #fff;
+        color: #333;
+        ;
+      }
+
+      .el-submenu__title {
+        color: #222;
+        padding-left: 20px !important;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: #091017;
+          font-weight: bold;
+        }
+      }
+
+      .is-active {
+        .el-submenu__title {
+          span {
+            color: #127dd7;
+          }
+        }
+
+        &.el-menu-item {
+          background: #e3f2ff;
+        }
+      }
+
+      .el-menu-item.is-actived {
+        color: #127dd7;
+      }
+    }
+
+    .el-submenu {
+      .el-menu {
+        .el-menu-item {
+          padding-left: 20px !important;
+          padding-right: 10px !important;
+          height: 40px;
+          display: flex !important;
+          align-items: center !important;
+        }
+      }
+    }
+
+    .el-menu-item {
+      display: flex !important;
+      padding-right: 10px !important;
+      align-items: center !important;
+    }
+  }
+
+  &.el-menu--collapse {
+    &>.kkk {
+
+      .el-submenu__icon-arrow,
+      span {
+        display: none;
+      }
+
+      .el-submenu {
+        padding-right: 0;
+      }
+    }
+  }
+}

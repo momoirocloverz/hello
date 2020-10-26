@@ -1,0 +1,63 @@
+.wares_form {
+  margin-top: 20px;
+
+  .topbtns {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
+  .el-button {
+    text-decoration: none;
+  }
+
+
+  .dsfs input {
+    padding-right: 90px;
+  }
+
+
+  .mt5 {
+    margin-top: 5px;
+  }
+
+  .bgw {
+    background: #fff;
+    padding: 10px 20px;
+    border-top: 1px solid #ebeef5;
+  }
+
+  .card_content {
+    width: 500px;
+  }
+
+  .box-card {
+    margin-top: 20px;
+  }
+
+  .tips {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+
+  .tags {
+    margin-right: 5px;
+  }
+
+  .attrs {
+    margin-left: 60px;
+  }
+
+  .standard_list {
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .rjlvu {
+    margin-top: 8px;
+  }
+
+  .el-checkbox.is-bordered+.el-checkbox.is-bordered {
+    margin-left: 0;
+  }
+}
